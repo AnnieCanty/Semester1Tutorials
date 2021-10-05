@@ -1,2 +1,9 @@
 # Semester1Tutorials
-Srtarting WK3/05.10.21
+Starting WK3/05.10.21
+
+
+## Tutorial One - Point and Click Mechanics
+
+#1
+#2
+#3
