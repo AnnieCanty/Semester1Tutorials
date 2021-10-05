@@ -25,4 +25,15 @@ Create a new Private variable.
         Once you have tested this has worked you can remove ``Update()`` from the code.  
 
 ## 3
+From here, we need to check if the player sclicks for the object to move, and if they do, the coordinates of where they click will also need to be found. 
 
+Create an if statement (In unity, type ``IF`` and press TAB twice in order to generate an if statement structure.)
+
+`if (Input.GetMouseButtonDown(0))
+        {       
+            target = new Vector2(mousePos.x, transform.position.y);
+        }`
+        This will ensure that players can move anwhere on the x-axis, while keeping them in the same y-axis position when they click anywhere on the screen.
+        Now, to move the player, we need to add to the ``Update()`` Function, the player positioning, and their mmovement speed once a click has been initiated. 
+        
+        `transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * 5f);`
