@@ -37,3 +37,8 @@ Create an if statement (In unity, type ``IF`` and press TAB twice in order to ge
         Now, to move the player, we need to add to the ``Update()`` Function, the player positioning, and their mmovement speed once a click has been initiated. 
         
         `transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * 5f);`
+        
+        ##4 
+        
+        Now you can save your script and click play within the Unity scene. By clicking anywhere on the screen the cube should now follow and stop at the x-axis position.
+        This is a simple point and click movement (2d) system in Unity. 
