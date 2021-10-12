@@ -43,3 +43,25 @@ Create an if statement (In unity, type ``IF`` and press TAB twice in order to ge
         
 Now you can save your script and click play within the Unity scene. By clicking anywhere on the screen the cube should now follow and stop at the x-axis position.
         This is a simple point and click movement (2d) system in Unity. 
+        
+       
+       
+       
+## Tutorial Two - Scroll
+
+## 1 
+
+Create an EmptyGameObject in he canvas, name is 'Content'. Re-size it to fit the space you want to scroll within. Drag all text objets you have created for scrolling on this object, to make them children object of 'Content'.
+
+## 2
+
+In the Inspector of the 'Content' object, select 'Add component' and search 'Vertical Layout Group'. Select it and give borders and spacing to your text that you see fit. Additionally, add the 'Content size fitter' compondent to 'Content' too, and set Vertical fir to preffered size. 
+
+## 3
+
+Make the 'Content' GameObject a child obect of a new Empty Game Object, 'ScrollArea'. To 'ScrollArea', add the 'ScrollRect' component, and untick the 'Horizontal' button, and ajust the Scroll Sensitivity as you see fit. To avoid UI overlap when scrolling, also apply the 'RectMask' component to ScrollArea' to block titles etc out of the scrolling text.
+
+## 4
+
+Initiate play and either use the middle mouse/trackpad to scroll normally ajnd see the text scroll with it, or click and drag where you want to scroll. 
+       This is how to create scrolling text in Unity. 
