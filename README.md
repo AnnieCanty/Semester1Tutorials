@@ -74,4 +74,30 @@ In your project, create a canvas, and initiate 2D mode in the scene view. (Top l
 
 Create a button, and resize using the Rect Tool (T). Disable the image in inspector. Select and size text as disired, name 'Resume', change colour, add shadow and place how you want it. Turn on Image, and reduce opacity, also alter change highlight and selected colour at different opacities, and change 'Navigation' to none, for better player imput and feedback.
 
+Duplicate the buttons and change the text and names for 'Menu' and 'Exit'
+This is the UI Setup.
+
+## 2 
+
+Disable the pause menu panel in Unity.
+Add a new C# Script in the canvas and open. Delete the start method and write:
+`` public static bool GameIsPaused = false;
+    public GameObject PauseMenuUI;``
+    
+    In Update write:
+    ``  void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();   
+            }
+        }
+    }``
+
 
