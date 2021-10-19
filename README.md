@@ -65,3 +65,13 @@ Make the 'Content' GameObject a child obect of a new Empty Game Object, 'ScrollA
 
 Initiate play and either use the middle mouse/trackpad to scroll normally ajnd see the text scroll with it, or click and drag where you want to scroll. 
        This is how to create scrolling text in Unity. 
+       
+## Tutorial Three - Pause Menu
+
+## 1 
+
+In your project, create a canvas, and initiate 2D mode in the scene view. (Top left of viewport). Right-click on the Canvas, and creae a panel in the UI menu, and change the panel colour to a slightly transparent black background. Change the source image of the panel to 'None', and rename the panel to PauseMenuUI
+
+Create a button, and resize using the Rect Tool (T). Disable the image in inspector. Select and size text as disired, name 'Resume', change colour, add shadow and place how you want it. Turn on Image, and reduce opacity, also alter change highlight and selected colour at different opacities, and change 'Navigation' to none, for better player imput and feedback.
+
+
