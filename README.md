@@ -99,5 +99,45 @@ Add a new C# Script in the canvas and open. Delete the start method and write:
             }
         }
     }``
+    
+    Also write a use for each method, such as Resume, Load Menu etc. 
+    
+    ``  public void Resume()
+    {
+        PauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
 
 
+    }
+
+   void Pause()
+    {
+
+        PauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
+           Time.timeScale = 1f;
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quitting game");
+    }``
+
+
+
+## 4
+
+Add functionality to these buttons. Add the GameObject (Pause Menu Panel) into the script on the canvas. On each button, under OnClick press (+),  and select PauseMenu, and then the relevant function ((Resume, Edit, Menu), test these.
+
+## 5 
+
+In oder to ensure that these LoadMenu and Quit functions work, add ``using UnityEngine.SceneManagement;`` to the top of the script, and all relevanty scripts are in the Game Build Settings, under the correct names as refered to in the script. 
+Make sure to test all of these. 
+ This is how to create a pause menu in Unity.
